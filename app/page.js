@@ -1,5 +1,21 @@
 import Image from "next/image";
 
+// this is the homepage
+
+/**
+ * by default everything in the app folder is rendered server side.
+ * If you want to render something client side you have to put
+ * 'use client' at the top of the page
+ * 
+ * Stuff that is updated and kept int he browser like most react states
+ * should be client side. UseEffect, UseState, and other hooks, should
+ * be client side.
+ * 
+ * next recommends use server side comps until there is a reason to use
+ * a client side. Accessing backend resources or updating data on a page,
+ * or getting sensitive information, use server side.
+ */
+
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">

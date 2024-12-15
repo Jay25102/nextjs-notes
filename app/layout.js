@@ -1,6 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+/**
+ * everything in this file is going to display across
+ * all webpages of this app. So this makes a great place to
+ * put things like navbars, footers, scripts, metadata, fonts
+ */
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
